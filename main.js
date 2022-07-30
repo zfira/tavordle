@@ -34,7 +34,7 @@ let guessDistribution;
 
 
 function pickWord() {
-    return "צפירה";
+    return listOfWords[0];
     //today = new Date();
     var differenceInTime = today.getTime() - summerClockStartDate.getTime();
 console.log(summerClockStartDate)
