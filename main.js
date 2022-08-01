@@ -2,7 +2,9 @@
 //  !!   listOfWords is in wordlist.js, hebWords is in hebwords.js    !! //
 
 ////////* Variables: *///////
-let  listOfMessages = ["על שמו נקרא מועדון הלייז האגדי"];
+let  listOfMessages = ["אחד מהיורקים הגדולים שידעה אשדר וכינויו של אחד מהפרובוקטורים הגדולים שיצאו מהכפר",
+                       "אחד מהיורקים הגדולים שידעה אשדר וכינויו של אחד מהפרובוקטורים הגדולים שיצאו מהכפר",
+                      ];
 // did user win todays game:
 let win = false;
 // did user finish todays game (win or lose):
