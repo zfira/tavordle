@@ -35,16 +35,16 @@ let guessDistribution;
 
 function pickWord() {
     return listOfWords[0];
-    //today = new Date();
     var differenceInTime = today.getTime() - summerClockStartDate.getTime();
-console.log(summerClockStartDate)
-console.log(today)
-
     // To calculate the no. of days between two dates
     var differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24)) + 31; //added 74 since it screwed the 1 hour difference between gmt+3 and gmt+2; 
-    console.log(differenceInDays)
     numOfWordale = differenceInDays;
     return listOfWords[differenceInDays];
+}
+
+let  listOfMessages = ["של שמו נקרא מועדון הלייז האגדי"]
+function pickListMessage() {
+    return listOfMessages[numOfWordale];
 }
 
 function clickLetter(value) {
@@ -249,6 +249,9 @@ function compareWords() {
         win = true;
         endOfGameToday = true;
         let winMessage = pickMessage();
+        if (pickListMessage()) {
+            winMessage = pickListMessage();
+        }
         openNotificationLong(winMessage, true);
         openShareNotificationLong();
 
