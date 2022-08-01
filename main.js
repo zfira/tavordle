@@ -21,7 +21,7 @@ let answersLetters = [];
 let numOfWordale = 0;
 // the launch date of wordale
 const startDate = new Date(2022, 0, 11);
-const summerClockStartDate = new Date(2022,2,26)
+const summerClockStartDate = new Date(2022,8,1)
 //today:
 let today = new Date();
 //word index is the numOfWordale calculated later on
@@ -41,7 +41,7 @@ console.log(summerClockStartDate)
 console.log(today)
 
     // To calculate the no. of days between two dates
-    var differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24)) + 74; //added 74 since it screwed the 1 hour difference between gmt+3 and gmt+2; 
+    var differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24)) + 31; //added 74 since it screwed the 1 hour difference between gmt+3 and gmt+2; 
     console.log(differenceInDays)
     numOfWordale = differenceInDays;
     return listOfWords[differenceInDays];
