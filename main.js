@@ -287,6 +287,10 @@ function pickMessage() {
     return messageArray[randIndex]
 }
 function checkSpell(word) {
+    if (word === pickedWord) {
+        return true;
+    }
+
     let wordExists = false;
     splitWordsHebrew = hebWords.split(' ');
     for (i = 0; i < splitWordsHebrew.length; i++) {
