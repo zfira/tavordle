@@ -2,7 +2,7 @@
 //  !!   listOfWords is in wordlist.js, hebWords is in hebwords.js    !! //
 
 ////////* Variables: *///////
-
+let  listOfMessages = ["על שמו נקרא מועדון הלייז האגדי"];
 // did user win todays game:
 let win = false;
 // did user finish todays game (win or lose):
@@ -42,7 +42,6 @@ function pickWord() {
     return listOfWords[differenceInDays];
 }
 
-let  listOfMessages = ["של שמו נקרא מועדון הלייז האגדי"]
 function pickListMessage() {
     return listOfMessages[numOfWordale];
 }
