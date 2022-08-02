@@ -291,7 +291,7 @@ function pickMessage() {
     return messageArray[randIndex]
 }
 function checkSpell(word) {
-    if (word === pickedWord) {
+    if (listOfWords.includes(word)) {
         return true;
     }
 
